@@ -1,0 +1,40 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: blue;
+}
+
+li {
+	margin-left : 4rem;
+}
+nav {
+	border-radius: 0px !important;
+}
+footer {
+	background-color: blue;
+	position: absolute;
+	bottom :0;
+	height : 5rem;
+	width : 100%;
+}
+
+#page_wraper {
+	min-height: 100vh;
+	position: relative;
+	padding-bottom : 5rem;
+}
+
+.title-blue {
+	color: white;
+	background-color: blue;
+	font-size:larger;
+	padding: 0.1rem;
+}
+
+.highlight-green {
+	color: green;
+	font-size:larger;
+}

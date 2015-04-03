@@ -1,46 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
+<?php
+include_once "/Template/template.php";
+$output_data['page_title'] = 'Website development service';
+printMainPage($output_data);
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+function printContentRegion1()
+{
+?>
+<div class="container">
+	<br /><br /><br />
+	<div>
+		<?php echo HTML::image('Images/Introduction/WebsiteDevelopingService/Image01.jpg','', array('class' => 'img-responsive')); ?>
+	</div>
+	<div>
+		<p class="lead h1 text-center">
+			You want to solidify your comany’s brand on the web ? You want your customers to know your best achievements, your vision and direction ? Or you just want people having the best way to contact you ? Look no further ! An information website is what you need !
+			<?php printContactMe() ?>
+		</p>
+	</div>
+	<br /><br /><br />
+	<hr />
+	<br /><br /><br />
+	<div>
+		<?php echo HTML::image('Images/Introduction/WebsiteDevelopingService/Image01.jpg','', array('class' => 'img-responsive')); ?>
+	</div>
+	<div>
+		<p class="lead h1 text-center">
+			You want to sell goods and services on the web ? You want to reach customers in the whole country, or perhaps the entire world ? And you want to get into the game without costing an arm and a leg ? Look no further ! An online store is what you need !
+			<?php printContactMe() ?>
+		</p>
+	</div>
+	<br /><br /><br />
+</div>
+<?php
+}
 
-		<title>new_file</title>
-		<meta name="description" content="">
-		<meta name="author" content="PhuWork">
-
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	</head>
-
-	<body>
-		<div>
-			<header>
-				<h1>new_file</h1>
-			</header>
-			<nav>
-				<p>
-					<a href="/">Home</a>
-				</p>
-				<p>
-					<a href="/contact">Contact</a>
-				</p>
-			</nav>
-
-			<div>
-
-			</div>
-
-			<footer>
-				<p>
-					&copy; Copyright  by PhuWork
-				</p>
-			</footer>
-		</div>
-	</body>
-</html>
+function printContactMe()
+{
+?>
+	<a href="<?php echo URL::to('contact') ?>"> Contact me if you want one !</a>
+<?php
+}
+?>

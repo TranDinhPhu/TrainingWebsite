@@ -8,14 +8,14 @@ class IntroductionController extends BaseController {
 	}
 
 	public function get_website_developing_service() {
-		return View::make('hello');
+		return View::make('introduction.website_developing_service');
 	}
 
 	public function get_developers_for_hire() {
-		return View::make('hello');
+		return View::make('introduction.developers_for_hire');
 	}
 
 	public function get_contact() {
-		return View::make('hello');
+		return View::make('introduction.contact');
 	}
 }
