@@ -29,8 +29,16 @@ function printMainPage($output_data)
 <body>
 	<div id="page_wraper">
 		<nav class="navbar navbar-default">
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_navigation_bar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="top_navigation_bar">
+				<ul class="nav navbar-nav">
 					<li <?php highlightCurrentPage('/') ?>>
 						<a href="<?php echo URL::to('/') ?>">Home</a>
 					</li>

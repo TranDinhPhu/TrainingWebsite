@@ -98,7 +98,11 @@ function printContentRegion1()
 </p>
 <p class="title-blue">REFERENCE</p>
 <p>
-- I’m happy to supply these on request
+- I’m happy to supply these on request<br />
+- My setup :<br />
+<div class="col-xs-2"></div>
+<div class="col-xs-8"><?php echo HTML::image('Images/Introduction/DevelopersForHire/Image02.jpg','', array('class' => 'img-responsive')); ?></div>
+<div class="col-xs-2"></div>
 </p>
 	</div>
 </div>
